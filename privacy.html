@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VRstream Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for the VRstream local-network media server app.">
+  <meta name="theme-color" content="#121316">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="logo_mark_512.png" alt="VRstream logo" width="34" height="34">
+        <span>VRstream</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="support.html">Support</a>
+        <a href="licenses.html">Licenses</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container legal">
+    <h1>Privacy Policy for VRstream</h1>
+    <p class="meta"><strong>Last updated:</strong> <span class="placeholder">[YYYY-MM-DD]</span></p>
+    <p class="meta">
+      <strong>Developer / Publisher:</strong> <span class="placeholder">[DEVELOPER LEGAL NAME OR COMPANY NAME]</span><br>
+      <strong>Privacy contact:</strong> <span class="placeholder">[PRIVACY EMAIL ADDRESS]</span><br>
+      <strong>Support contact:</strong> <span class="placeholder">[SUPPORT EMAIL ADDRESS OR SUPPORT URL]</span><br>
+      <strong>Jurisdiction:</strong> <span class="placeholder">[COUNTRY / STATE / REGION]</span>
+    </p>
+
+    <p>VRstream is a local-network media server. It streams media files that you choose from your device to DLNA/UPnP clients on the same local network. The App is designed to operate without a user account, without cloud storage, and without remote data collection by the developer.</p>
+    <p>However, the App includes third-party SDKs (Google Mobile Ads and Google Play Billing) whose own data practices may apply. Those SDKs may collect or process data as described in their own policies, even though VRstream's own production ads and premium purchases are disabled or not yet configured.</p>
+
+    <h2>1. Information We Collect</h2>
+    <h3>1.1 Information you provide directly</h3>
+    <ul>
+      <li><strong>Selected media and folders.</strong> You choose which folders or individual files VRstream may share. These selections are stored locally on your device so the server can rebuild its library.</li>
+      <li><strong>Settings.</strong> Preferences such as server name, HTTP port, auto-start, theme, wallpaper, diagnostics, and shared-folder/file lists are stored locally.</li>
+      <li><strong>User-provided wallpaper.</strong> If you select a custom wallpaper image or video, its local path is stored. The media itself remains on your device.</li>
+    </ul>
+    <h3>1.2 Information generated locally</h3>
+    <ul>
+      <li><strong>Media metadata.</strong> Titles, paths, MIME types, sizes, durations, and generated thumbnails may be created and cached locally.</li>
+      <li><strong>Server logs.</strong> The App prints diagnostic information (for example, HTTP requests, SSDP discovery, shared-folder rebuilds, and errors) to the Android system log (logcat). These logs remain on the device and are not transmitted to the developer.</li>
+      <li><strong>Foreground service notification.</strong> On Android 13 and later, the App may request notification permission to show a persistent notification while the server runs.</li>
+    </ul>
+    <h3>1.3 Information collected by third-party SDKs</h3>
+    <p>The App initializes the following third-party SDKs on Android:</p>
+    <ul>
+      <li><strong>Google Mobile Ads SDK</strong> (<code>google_mobile_ads</code>), using Google's official <strong>test</strong> ad unit IDs. Production ads are disabled by default and are not enabled unless the owner explicitly configures real AdMob IDs and authorizes production ads.</li>
+      <li><strong>Google Play Billing</strong> (<code>in_app_purchase</code>) for the premium product ID <code>vrstream_premium</code>. Billing is only relevant if and when the product is configured in Google Play Console.</li>
+    </ul>
+    <p>These SDKs may collect or process data such as device identifiers, advertising identifiers, IP address, approximate location, diagnostics, and purchase-related information according to Google's own policies. VRstream does not control that collection.</p>
+    <p>Relevant third-party policies:</p>
+    <ul>
+      <li>Google Privacy Policy: <a href="https://policies.google.com/privacy" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
+      <li>Google AdMob / Google Mobile Ads: <a href="https://support.google.com/admob/answer/6128543" rel="noopener noreferrer">https://support.google.com/admob/answer/6128543</a></li>
+      <li>Google Play Billing: <a href="https://support.google.com/googleplay/answer/28431" rel="noopener noreferrer">https://support.google.com/googleplay/answer/28431</a></li>
+    </ul>
+    <h3>1.4 Information we do NOT collect</h3>
+    <p>Based on the current implementation, VRstream itself does not:</p>
+    <ul>
+      <li>Require or create a user account.</li>
+      <li>Upload your media, filenames, thumbnails, or metadata to a developer server.</li>
+      <li>Use analytics, crash reporting, or telemetry services.</li>
+      <li>Request broad storage permission; folder access is granted through Android's Storage Access Framework.</li>
+      <li>Send your media over the internet. Streaming is limited to your local network.</li>
+    </ul>
+
+    <h2>2. How Information Is Used</h2>
+    <ul>
+      <li>To provide the local DLNA/UPnP server and browse/playback features you request.</li>
+      <li>To remember your settings, shared folders/files, and preferences.</li>
+      <li>To display test advertisements if the AdMob SDK loads them.</li>
+      <li>To process premium purchases or restores through Google Play if configured.</li>
+      <li>To show diagnostics and troubleshoot issues locally.</li>
+    </ul>
+
+    <h2>3. Local Network Streaming and HTTP</h2>
+    <p>VRstream starts an HTTP server that binds to your local network interface and serves selected media to DLNA/UPnP clients on the same network. This traffic is <strong>unencrypted HTTP</strong>, which is required for compatibility with many DLNA clients. The server does not require authentication.</p>
+    <p>Do not expose the server's port to the public internet. Only use VRstream on trusted local networks.</p>
+
+    <h2>4. Data Sharing</h2>
+    <p>VRstream does not sell or share your personal data with the developer or third parties, except:</p>
+    <ul>
+      <li>Data processed by Google Mobile Ads and Google Play Billing as part of their SDK operation.</li>
+      <li>Media and metadata transmitted to DLNA/UPnP clients that you choose to connect on your local network.</li>
+    </ul>
+
+    <h2>5. Data Storage, Retention, and Deletion</h2>
+    <ul>
+      <li>Settings, shared-folder lists, playlists, thumbnails, and caches are stored locally on your device.</li>
+      <li>Uninstalling the App removes its local app data on Android, including settings and cached thumbnails.</li>
+      <li>Shared media files are never modified, moved, or deleted by VRstream.</li>
+      <li>On desktop platforms, settings and caches are stored in the per-user application data directory and can be deleted manually.</li>
+    </ul>
+
+    <h2>6. Security</h2>
+    <p>VRstream includes path validation and traversal protection for media requests. However, because the local server does not use authentication, anyone on the same local network may be able to browse and stream the media you have chosen to share. You are responsible for selecting an appropriate network and shared content.</p>
+
+    <h2>7. Children's Privacy</h2>
+    <p>VRstream is not directed to children. It does not knowingly collect personal information from children. The App's production ads are disabled by default; if production ads are ever enabled, the developer must ensure compliance with applicable child-privacy and family policies.</p>
+
+    <h2>8. Your Rights</h2>
+    <p>Depending on your jurisdiction, you may have rights to access, correct, delete, or restrict processing of personal data. Because VRstream stores its data locally and the developer does not receive it, most requests can be satisfied by uninstalling the App or deleting its local data. For SDK-related requests, contact Google directly.</p>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>The developer may update this Privacy Policy. The "Last updated" date will change when updates are made. Continued use of the App after changes means you accept the updated policy.</p>
+
+    <h2>10. Contact</h2>
+    <p>Questions about this Privacy Policy or the App should be sent to:</p>
+    <ul>
+      <li>Privacy: <span class="placeholder">[PRIVACY EMAIL ADDRESS]</span></li>
+      <li>Support: <span class="placeholder">[SUPPORT EMAIL ADDRESS OR SUPPORT URL]</span></li>
+    </ul>
+
+    <p class="meta">This document is provided as a starting point for Google Play publication and should be reviewed by the developer and, where necessary, by qualified legal counsel before publication.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>VRstream</h4>
+        <p>A free, local-network DLNA/UPnP media server for VR180, 3D, and regular video.</p>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="licenses.html">Open-Source Licenses</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li><a href="support.html">Support &amp; Troubleshooting</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

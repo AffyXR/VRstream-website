@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VRstream Support</title>
+  <meta name="description" content="Support and troubleshooting for the VRstream local-network media server app.">
+  <meta name="theme-color" content="#121316">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="logo_mark_512.png" alt="VRstream logo" width="34" height="34">
+        <span>VRstream</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="support.html">Support</a>
+        <a href="licenses.html">Licenses</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container legal">
+    <h1>Support &amp; Troubleshooting</h1>
+    <p>VRstream is a local-network DLNA/UPnP media server. Most issues are related to network discovery, file access, or client compatibility.</p>
+
+    <h2>Contact</h2>
+    <p>Support contact: <span class="placeholder">[SUPPORT EMAIL ADDRESS OR SUPPORT URL]</span></p>
+    <p>Privacy contact: <span class="placeholder">[PRIVACY EMAIL ADDRESS]</span></p>
+
+    <h2>Playback issues</h2>
+    <ul>
+      <li>Confirm the server is running and the address/port shown in the app are reachable from the client device.</li>
+      <li>Use a DLNA client that supports the media format. VRstream streams original files without transcoding.</li>
+      <li>For large files, ensure the client supports HTTP byte-range requests for seeking.</li>
+      <li>Restart the server after adding or removing shared folders.</li>
+    </ul>
+
+    <h2>File access issues</h2>
+    <ul>
+      <li>On Android, grant folder access through the Storage Access Framework prompts. VRstream does not request broad storage permission.</li>
+      <li>Re-add a folder if its contents changed or if the original grant expired.</li>
+      <li>Shared media files are never modified, moved, or deleted by VRstream.</li>
+    </ul>
+
+    <h2>DLNA connection issues</h2>
+    <ul>
+      <li>Ensure the phone/computer and the client are on the same local network.</li>
+      <li>Allow multicast traffic; SSDP discovery uses <code>239.255.255.250:1900</code>.</li>
+      <li>If discovery is blocked, connect the client manually to the server address and port shown in the app.</li>
+      <li>Check that no firewall blocks the configured port (default <code>8200</code>).</li>
+      <li>Stop and restart the server to re-announce <code>ssdp:alive</code> notifications.</li>
+    </ul>
+
+    <h2>Compatibility</h2>
+    <ul>
+      <li>Android, Windows, macOS, and Linux are supported. iOS/iPadOS scaffolding is included but may require additional setup.</li>
+      <li>VR headsets and players must support the media formats you share.</li>
+      <li>Production ads and premium purchases are disabled or unconfigured by default; billing requires Google Play Console setup.</li>
+    </ul>
+
+    <h2>Privacy and data</h2>
+    <p>See the <a href="privacy.html">Privacy Policy</a> for details on local storage, third-party SDKs, and deletion. Uninstalling the App removes local app data on Android.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>VRstream</h4>
+        <p>A free, local-network DLNA/UPnP media server for VR180, 3D, and regular video.</p>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="licenses.html">Open-Source Licenses</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li><a href="support.html">Support &amp; Troubleshooting</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
