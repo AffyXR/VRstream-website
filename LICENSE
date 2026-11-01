@@ -1,0 +1,12 @@
+﻿Proprietary Software License - VRstream (Proposed)
+
+Copyright (c) 2026 AffyVR
+All rights reserved.
+
+This software and its associated documentation (the "Software") are the proprietary property of the copyright holder. The Software is provided for evaluation and licensed use only under terms to be determined by the copyright holder. It is NOT licensed under MIT or any other open-source license unless explicitly stated in writing.
+
+No open-source or MIT license applies to VRstream itself. This proposed license supersedes any prior open-source claims only upon explicit approval and publication by the copyright holder. Prior grants under MIT (if any) remain valid for recipients who obtained the code under those terms.
+
+THIRD-PARTY COMPONENTS: The Software uses open-source dependencies (Flutter SDK, file_picker, image, video_player, etc.) whose individual licenses (MIT, BSD-3-Clause, Apache-2.0) are preserved and acknowledged separately. See licenses.html for the dependency notices.
+
+No representation or warranty is made regarding fitness for a particular purpose, merchantability, or non-infringement. The copyright holder reserves the right to modify, discontinue, or change licensing terms at any time.
